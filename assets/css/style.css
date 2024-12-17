@@ -1,0 +1,137 @@
+         body {
+              font-family: Arial, Helvetica, sans-serif;
+              margin: 0;
+              padding: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100vh;
+              background-color: #f0f2f5;
+          }
+
+          .login-container {
+              background-color: white;
+              padding: 2rem;
+              border-radius: 8px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              max-width: 400px;
+              width: 100%;
+          }
+
+          .login-form h2 {
+              margin-bottom: 1rem;
+              text-align: center;
+              color: #333;
+          }
+
+          .input-group {
+              margin-bottom: 1rem;
+          }
+
+          .input-group label {
+              display: block;
+              margin-bottom: 0.5rem;
+              color: #555;
+          }
+
+          .input-group input {
+              width: 100%;
+              padding: 0.5rem;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+          }
+
+          button {
+              width: 10%;
+              padding: 0.60rem;
+              border: none;
+              border-radius: 2px;
+              background-color: #007bff;
+              color: white;
+              font-size: 1rem;
+              cursor: pointer;
+              
+          }
+
+          button:hover {
+              background-color: #0056b3;
+          }
+
+          section {
+              width: 100%;
+              height: 100vh;
+              position: absolute;
+              background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+                  url(../images/bg2.jpg);
+              background-position: center;
+              background-size: cover;
+              opacity: 1;
+          }
+
+          nav {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+              height: 70px;
+              position: absolute;
+              padding: 10px;
+
+          }
+
+          nav .logo2 {
+              display: flex;
+              /* position: absolute; */
+              align-items: center;
+          }
+
+          nav .logo2 img {
+              position: relative;
+              width: 110px;
+              height: 140px;
+              margin-top: 7%;
+              align-items: center;
+              left: 100%;
+          }
+
+          nav ul li {
+              display: inline-block;
+              position: relative;
+              margin: 15px;
+          }
+
+          nav ul li a {
+              color: #fff;
+              text-decoration: none;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              padding: 12px 13px;
+              font-size: 14px;
+              font-weight: 500;
+              position: relative;
+              /* left: 500px; */
+              cursor: pointer;
+              transition: all .5 ease;
+          }
+
+          ul li a:hover {
+              border-radius: 25px;
+              background-color: rgb(159, 159, 159);
+              box-shadow: 0px 0px 7px rgb(178, 177, 177);
+              border-bottom: 2px solid red;
+              transform: translate(500px);
+
+          }
+
+          .content {
+              display: block;
+              position: absolute;
+              color: #fff;
+              left: 10%;
+              top: 30%;
+          }
+
+          .content h1 {
+              font-size: 60px;
+              text-transform: uppercase;
+          }

@@ -1,0 +1,86 @@
+<html>
+  <head>
+    
+    <link href="../assets/css/captcha.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+              body{
+                      width:100%;
+                      height: 100vh;
+                      background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),
+                      url(../assets/images/bg2.jpg);
+                      background-position: center;
+                      background-size: cover;
+                      
+                  }
+                  div{
+                      color: #fff;
+                  }
+                  
+                  .form_button{
+                    width: 90%;
+                    display: block;
+                    margin: auto;
+                    padding: 1em 1em;;
+                    outline: none;
+                    border: none;
+                    background-color: black;
+                    color: #fff;
+                    font-size: 1em;
+                    border-radius: .5em;
+                    cursor: pointer;
+                    transition: .4s;
+                    margin-top: 10px;
+                }
+                .login_form .inputBx [type="submit"]{
+                  margin-top: 50px;
+                }
+                .form_input_captcha{
+                  font-size: 2em;
+                  color: #fff;
+                }
+
+                
+          </style>
+  </head>
+  <body>
+
+    <form action="login.php" method="post">
+    <div class="login_form">
+      
+        <div class="login">
+          <h2>Login</h2>
+        <div class="inputBx">
+          <input type="text" name="username" placeholder="Email">
+        </div>
+        <div class="inputBx">
+          <input type="password" name="password" placeholder="Password">
+        </div>
+        
+      <div id="captcha" class="form_div">
+          <div class="preview"></div>
+          <div class="captcha_form"> 
+              <input type="text" id="captcha_form" class="form_input_captcha" placeholder=" ">
+              <button class="captcha_refersh">
+                  <i class="fa fa-refresh">Ref</i>
+                  <i class="fa fa-refresh">resh</i>
+                  
+              </button>
+        </div>
+      </div>
+      <div class="inputBx">
+          <input type="submit" value="Log in">
+      </div>
+      <div class="links">
+          <a href="../resetpassword1.php">Forget Password</a>
+          <a href="signup.html">Signup</a>
+      </div>
+      <span style="color: red;"><?php echo $error; ?></span>
+  
+</div>
+</form>
+    <script src="../assets/js/captcha.js"></script>
+
+</body>
+</html>
+
